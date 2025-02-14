@@ -181,6 +181,7 @@ body {
 .contents {
     background-color: var(--contents-background-color);
     display: grid;
+    gap: 2rem;
     grid-template-columns: 7fr 3fr;
     padding: 2rem 2rem 4rem 1rem;
 }
@@ -194,8 +195,7 @@ body {
 .contents .left-panel .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: 100%;
+    grid-template-rows: repeat(3, max-content);
     gap: 2rem;
 }
 
@@ -213,4 +213,81 @@ body {
 .contents .left-panel .card-container .card .card-description {
     font-size: 0.9rem;
     color: var(--card-description-color);
+    margin-bottom: 2rem;
+}
+
+.contents .left-panel .card-container .card .card-icons {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-self: end;
+    gap: 20px;
+}
+
+.contents .left-panel .card-container .card .card-icons div {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+}
+
+.contents .right-panel {
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    gap: 2rem;
+}
+
+.contents .right-panel .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.contents .right-panel .announcements-container {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contents .right-panel .announcements-container .announce:not(:last-child) {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+}
+
+.contents .right-panel .announcements-container .announce .announce-title {
+    font-weight: 600;
+}
+
+.contents .right-panel .announcements-container .announce .announce-description {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.contents .right-panel .trending-container {
+    display: grid;
+    background-color: white;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 10px;
+}
+
+.contents .right-panel .trending-container .account {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contents .right-panel .trending-container .account .account-image {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+}
+
+.contents .right-panel .trending-container .account-name {
+    margin-bottom: 0.2rem;
+}
+
+.contents .right-panel .trending-container .account .account-description {
+    color: #999;
 }
