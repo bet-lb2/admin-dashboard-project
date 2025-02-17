@@ -47,23 +47,26 @@ body {
     gap: 7.5rem;
 }
 
+.sidebar img {
+    filter: invert(1);
+}
+
 .sidebar .logo {
     font-size: 3rem;
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 1rem;
+    align-items: center;
 }
 
 .sidebar .logo .logo-image {
     width: 50px;
     height: 50px;
-    background-color: gray;
 }
 
-.sidebar div:not(.logo-image) {
+.sidebar nav ul li div {
     width: 25px;
     height: 25px;
-    background-color: gray;
 }
 
 .sidebar nav ul {
@@ -99,7 +102,6 @@ body {
 .header .search-box .search-icon {
     width: 25px;
     height: 25px;
-    background-color: gray;
 }
 
 .header .search-box input {
@@ -122,13 +124,11 @@ body {
 .header .user-top .notification-icon {
     width: 25px;
     height: 25px;
-    background-color: gray;
 }
 
 .header .user-top .user-icon {
     width: 40px;
     height: 40px;
-    background-color: gray;
 }
 
 .header .user-top .user-name {
@@ -146,7 +146,6 @@ body {
 .header .user-bottom .icon-image {
     width: 75px;
     height: 75px;
-    background-color: gray;
 }
 
 .header .user-bottom .greeting {
@@ -226,7 +225,7 @@ body {
 .contents .left-panel .card-container .card .card-icons div {
     width: 20px;
     height: 20px;
-    background-color: gray;
+    
 }
 
 .contents .right-panel {
@@ -281,7 +280,6 @@ body {
 .contents .right-panel .trending-container .account .account-image {
     width: 40px;
     height: 40px;
-    background-color: gray;
 }
 
 .contents .right-panel .trending-container .account-name {
